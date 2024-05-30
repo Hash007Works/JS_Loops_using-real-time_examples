@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops-for- arrays</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+       <h1>Arrays </h1>
+       <ul id="msg">
+            <li>My Course Name:</li>
+       </ul>
+    </div>
+
+
+    <script>
+        const arr=["UI Design","Angular","React JS","Node JS","Java","python","dotnet","vmware"]
+
+        let p=""
+        
+        for(let a=0;a<arr.length;a++)
+        {
+            p+=`<li> My Course name : ${arr[a]}</li>`
+        }
+        document.getElementById("msg").innerHTML=p
+
+    </script>
+</body>
+
+</html>
